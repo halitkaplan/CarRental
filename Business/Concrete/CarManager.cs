@@ -51,7 +51,7 @@ namespace Business.Concrete
            return  new DataResult<List<Car>>(_carDal.GetAll(), true, "Ürünler Listelendi.");
         }
 
-        public IDataResult<List<Car>> GetAllByCarId(int carId)
+        public IDataResult<List<Car>> GetByCarId(int carId)
         {
             return new DataResult<List<Car>>(_carDal.GetAll(c=>c.CarId == carId), true);
         }

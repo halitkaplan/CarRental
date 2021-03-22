@@ -28,7 +28,7 @@ namespace Business.Concrete
             //    return new ErrorResult(Messages.CannotBeRented);
             //}
             _rentalDal.Add(rental);
-            return new SuccessResult(Messages.Rentable);
+            return new SuccessResult(Messages.AddedRental);
         }
 
         public IResult Delete(Rental rental)

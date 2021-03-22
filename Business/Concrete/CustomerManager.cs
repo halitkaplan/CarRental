@@ -43,7 +43,7 @@ namespace Business.Concrete
             return new DataResult<List<Customer>>(_customerDal.GetAll(), true, "Müşteriler Listelendi.");
         }
 
-        public IDataResult<List<Customer>> GetAllByCustomerId(int userId)
+        public IDataResult<List<Customer>> GetByCustomerId(int userId)
         {
 
             return new SuccessDataResult<List<Customer>>(_customerDal.GetAll(c => c.CustomerId == userId));
